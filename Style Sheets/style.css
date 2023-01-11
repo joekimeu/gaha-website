@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background : white;
+    color: var(--clr-dark); 
+    margin: 0;
+    line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+/* header */
+header {
+    top: 0%;
+    width: 100%;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.logo {
+    max-width: 55px;
+    position: sticky;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__list li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.nav__list li a {
+    transition: all 0.3s ease 0s;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: red;
+    text-decoration: none;
+}
+
+.nav__list li a:hover {
+    color: chartreuse
+}
+
+.header-contact a{
+    padding: 9px 25px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 1em;
+}
+
+.header-contact:hover{
+    opacity: 40%;
+}
+
+.intro {
+    background-image: url(/Images/nurses1.jpg);
+    text-align: center;
+    color:indigo;
+}
+.reach-out-button {
+    overflow: hidden;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.reach-out-button::after{
+    content:"";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: #ff3cac;
+    background-image: linear-gradient(
+        225deg, 
+        #27d86c 0%, 
+        #26caf8 50%,
+        #c625d0 100%ß
+    );
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+.reach-out-button:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5), -10px 10px 25px 0 rgba(39, 200, 255, 0.5);
+}
+
+
+.reach-out-button:hover::after{
+    transform: rotate(150deg);
+}
+
+
+/* footer */
+footer {
+    background: black;
+    padding-top: 4em;
+}
+
+
